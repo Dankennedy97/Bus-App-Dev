@@ -1,7 +1,9 @@
-body {
-  background-color: rgb(224, 0, 0, 0.1);
+
+label {
+  font-family: monospace;
+  font-size: 20px;
 }
 
-.col-md-4 {
-  margin-top: 100px;
+body {
+  background-color: rgb(188, 181, 181, 0.1);
 }
