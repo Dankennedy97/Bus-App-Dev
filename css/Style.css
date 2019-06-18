@@ -35,3 +35,9 @@
 .f {
   text-align: center;
 }
+
+
+label {
+  font-family: monospace;
+  font-size: 20px;
+}
