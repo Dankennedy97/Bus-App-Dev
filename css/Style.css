@@ -21,18 +21,25 @@
 }
 
 #reason {
-
+  columns: 100px;
+  rows: 10px;
 }
 
 #ent {
-
+  position: relative;
+  left: 400px;
+  top: 100px;
 }
 
 .drop {
-  align-items: center;
+  padding-top: 100px;
+  padding-left: 870px;
+  position: relative;
+
 }
 
 .f {
+  padding-top: 150px;
   text-align: center;
 }
 
