@@ -48,3 +48,11 @@ label {
   font-family: monospace;
   font-size: 20px;
 }
+
+.head {
+  text-align: center;
+}
+
+.bod {
+  padding: 10px;
+}
