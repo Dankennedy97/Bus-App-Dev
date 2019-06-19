@@ -46,7 +46,12 @@
     <form class="f" action="/action_page.php">
       Please enter a reason for swap request (optional):<br>
       <input id="reason" type="text"><br>
-      <input id="ent" type="submit" value="Submit">
+      <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
+    <script>
+      function myFunction() {
+        alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
+      }
+    </script>
     </form>
   </body>
 </html>
