@@ -26,16 +26,11 @@
 }
 
 #ent {
-  position: relative;
-  left: 400px;
-  top: 100px;
+  text-align: center;
 }
 
 .drop {
-  padding-top: 100px;
-  padding-left: 870px;
-  position: relative;
-
+  text-align: center;
 }
 
 .f {
