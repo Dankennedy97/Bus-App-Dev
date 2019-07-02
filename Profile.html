@@ -32,7 +32,13 @@
     </nav>
     <h1 class="head">Employee Info</h1>
     <p class="bod">Employee Photo</p>
-    <img src="#" class="bod">
+    <form action="upload.php" method="post" enctype="multipart/form-data" class="bod">
+      Upload an image for Employee info:
+      <br>
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <br>
+      <input type="submit" value="Upload Image" name="submit">
+    </form>
     <p class="bod">Name</p>
     <p class="bod">ID</p>
     <p class="bod">Staff Level</p>
