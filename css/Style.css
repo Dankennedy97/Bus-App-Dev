@@ -51,3 +51,9 @@ label {
 .bod {
   padding: 10px;
 }
+
+#calendar {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
