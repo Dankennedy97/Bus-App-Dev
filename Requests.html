@@ -34,25 +34,47 @@
         </ul>
       </div>
     </nav>
-    <h1 class="head">Swap Request</h1>
-    <div class="drop">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Select an option
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dMB">
-        <a class="dropdown-item" href="Sick.html">Sick Day Request</a>
-      </div>
-    </div>
-    <br>
-    <form class="f" action="Profile.html">
-      Please enter a reason for swap request (optional):<br>
-      <input id="reason" type="text" rows="10" cols="50"><br>
-      <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
-      <script>
-        function myFunction() {
-          alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
-        }
-      </script>
-    </form>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-6 pt-2">
+          <div class="card mt-3 shadow-lg">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Face_Swap_Live_Logo.png" alt="login-image">
+            <div class="card-body">
+              <h1 class="head p-3">Swap Request</h1>
+              <div class="drop mt-5">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select an option
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dMB">
+                  <a class="dropdown-item" href="Sick.html">Sick Day Request</a>
+                </div>
+              </div>
+
+              <div class="form-group">
+              <form class="f p-2" action="Profile.html">
+                Please enter a reason for swap request (optional):<br>
+                <input class="form-control" id="reason" type="text" rows="10" cols="50"><br>
+                <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
+              </div>
+
+                <script>
+                  function myFunction() {
+                    alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
+                  }
+                </script>
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
   </body>
 </html>
