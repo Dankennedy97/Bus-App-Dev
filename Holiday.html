@@ -44,42 +44,37 @@
 
         </div>
 
-        <div class="col-md-6 pt-2">
-          <div class="card my-3 shadow-lg">
-            <img class="card-img-top" src="https://is2-ssl.mzstatic.com/image/thumb/Purple62/v4/62/0d/38/620d38c1-592e-eb9b-77d3-665cc7daafdd/source/512x512bb.jpg" alt="login-image">
-            <div class="card-body">
-              <h1 class="head p-3">Swap Request</h1>
-              <div class="drop mt-5">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select an option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dMB">
-                  <a class="dropdown-item" href="Sick.html">Sick Day Request</a>
-                  <a class="dropdown-item" href="Holiday.html">Holiday Request</a>
-                </div>
-              </div>
-              <br>
-              <br>
-              <div class="form-group">
-              <form class="f p-2" action="Profile.html">
-                Please enter a reason for swap request (optional):<br>
-                <input class="form-control" id="reason" type="text" rows="10" cols="50"><br>
-                <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
-              </div>
-
-                <script>
-                  function myFunction() {
-                    alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
-                  }
-                </script>
-              </form>
-
-
-
+    <div class="col-md-6 pt-2">
+      <div class="card my-3 shadow-lg">
+        <img class="card-img-top" src="images/h.png" alt="login-image">
+        <div class="card-body">
+          <h1 class="head p-3">Holiday Request</h1>
+          <div class="drop mt-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an option
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dMB">
+              <a class="dropdown-item" href="Requests.html">Swap Request</a>
+              <a class="dropdown-item" href="Sick.html">Sick Day Request</a>
             </div>
           </div>
+          <br>
+          <br>
+          <div class="form-group">
+          <form class="f p-2" action="Profile.html">
+            Please enter a reason for Holiday request (optional):<br>
+            <input class="form-control" id="reason" type="text" rows="10" cols="50"><br>
+            <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
+          </div>
+
+            <script>
+              function myFunction() {
+                alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
+              }
+            </script>
+          </form>
         </div>
-
-
+      </div>
+    </div>
   </body>
 </html>
