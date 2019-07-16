@@ -23,10 +23,13 @@
             <a class="nav-link" href="Profile.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Requests.html">Requests</a>
+            <a class="nav-link" href="#">Requests</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Roster.html">Roster</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Profile.html">Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">Login</a>
@@ -34,25 +37,42 @@
         </ul>
       </div>
     </nav>
-    <h1 class="head">Sick Request</h1>
-    <div class="drop">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Select an option
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dMB">
-        <a class="dropdown-item" href="Requests.html">Swap Request</a>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+
+        </div>
+
+    <div class="col-md-6 pt-2">
+      <div class="card mt-3 shadow-lg">
+        <img class="card-img-top" class="ic" src="https://kfurman2632.files.wordpress.com/2017/03/sick-day.png?w=1920&h=768&crop=1" alt="login-image">
+        <div class="card-body">
+          <h1 class="head p-3">Sick Request</h1>
+          <div class="drop mt-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dMB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select an option
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dMB">
+              <a class="dropdown-item" href="Sick.html">Swap Request</a>
+            </div>
+          </div>
+
+          <div class="form-group">
+          <form class="f p-2" action="Profile.html">
+            Please enter a reason for sick day request (optional):<br>
+            <input class="form-control" id="reason" type="text" rows="10" cols="50"><br>
+            <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
+          </div>
+
+            <script>
+              function myFunction() {
+                alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
+              }
+            </script>
+          </form>
+        </div>
       </div>
     </div>
-    <br>
-    <form class="f" action="Profile.html">
-      Please enter a reason for swap request (optional):<br>
-      <input id="reason" type="text"><br>
-      <input button onclick="myFunction()" id="ent" type="submit" value="Submit" >
-    </form>
-    <script>
-      function myFunction() {
-        alert ("Thank you for submitting your request. It is currently being reviewed by your CNM.");
-      }
-    </script>
   </body>
 </html>
