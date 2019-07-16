@@ -26,11 +26,11 @@
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          plugins: [ 'interaction', 'dayGrid', 'list' ],
+          plugins: [ 'interaction', 'dayGrid', 'list', 'timeGrid' ],
           header: {
             left: 'prevYear,prev,next,nextYear today',
             center: 'title',
-            right: 'dayGridMonth,dayGridWeek,listWeek,dayGridDay,listDay'
+            right: 'dayGridMonth,timeGridWeek,listWeek,listDay'
           },
 
           views: {
@@ -42,7 +42,7 @@
           selectable: true,
           selectMirror: true,
           select: function(arg) {
-            var title = prompt('Event Title:');
+            var title = prompt('Employee name:');
             if (title) {
               calendar.addEvent({
                 title: title,
@@ -53,6 +53,7 @@
             }
             calendar.unselect()
           },
+          defaultView: 'timeGridWeek',
           editable: true,
           eventLimit: true, // allow "more" link when too many events
         });
