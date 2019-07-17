@@ -1,0 +1,59 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color:;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+}
+
+.month {
+  text-align: center;
+  font-style: normal;
+
+}
+
+#reason {
+  columns: 100px;
+  rows: 10px;
+}
+
+#ent {
+  text-align: center;
+}
+
+.drop {
+  text-align: center;
+}
+
+.f {
+  padding-top: 150px;
+  text-align: center;
+}
+
+
+label {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.head {
+  text-align: center;
+}
+
+.bod {
+  padding: 10px;
+}
+
+#calendar {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}

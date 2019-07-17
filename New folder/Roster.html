@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/Style.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+
+
+
+    <link href='calendar/packages/core/main.css' rel='stylesheet' />
+    <link href='calendar/packages/daygrid/main.css' rel='stylesheet' />
+    <link href='calendar/packages/timegrid/main.css' rel='stylesheet' />
+    <link href='calendar/packages/list/main.css' rel='stylesheet' />
+    <script src='calendar/packages/core/main.js'></script>
+    <script src='calendar/packages/interaction/main.js'></script>
+    <script src='calendar/packages/daygrid/main.js'></script>
+    <script src='calendar/packages/timegrid/main.js'></script>
+    <script src='calendar/packages/list/main.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'interaction', 'dayGrid', 'list', 'timeGrid' ],
+          header: {
+            left: 'prevYear,prev,next,nextYear today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,listWeek,listDay'
+          },
+
+          views: {
+            listDay: { buttonText: 'list day' },
+            listWeek: { buttonText: 'list week' }
+          },
+
+          navLinks: true, // can click day/week names to navigate views
+          selectable: true,
+          selectMirror: true,
+          select: function(arg) {
+            var title = prompt('Employee name:');
+            if (title) {
+              calendar.addEvent({
+                title: title,
+                start: arg.start,
+                end: arg.end,
+                allDay: arg.allDay
+              })
+            }
+            calendar.unselect()
+          },
+          defaultView: 'timeGridWeek',
+          editable: true,
+          eventLimit: true, // allow "more" link when too many events
+        });
+
+        calendar.render();
+      });
+
+    </script>
+    <title>Online Roster</title>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Online Roster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Profile.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Requests.html">Requests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Roster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container py-3">
+        <div id='calendar'>
+
+        </div>
+      </div>
+
+
+    </body>
+  </html>
